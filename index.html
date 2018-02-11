@@ -8,134 +8,168 @@
   <title>Home page</title>
 
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div style="margin-bottom: 10px;">
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="nalanda.jpg" alt="Nalanda Logo" style="width:40px;">
-        </a>
+    <!-- Start of Header -->
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#">
+            <img src="nalanda.jpg" alt="Nalanda Logo" style="width:40px;">
+          </a>
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="studentJobs.html">Student Jobs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="facebook.html">Facebook</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="twitter.html">Twitter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Register.html">Register</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="studentJobs.html">Student Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="facebook.html">Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="twitter.html">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div>
-      <br>
-      <div class="alert alert-info alert-dismissable fade show">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>FAQ!</strong> Why <span style="text-decoration: underline;"> learn to speak</span>   from Nalanda? <strong>Ans.</strong> We focus only on spoken English and use unique techniques that will save massive  time and effort of the learners.
+    <!-- End of Header -->
+
+    <!-- Start of search bar -->
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+          <form class="form-inline" action="#">
+            <input class="form-control" type="text" placeholder="Expression Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+          <form class="form-inline" action="#">
+            <input class="form-control" type="text" placeholder="Video Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+    </div>
+    <!-- End of search bar -->
+
+    <div class="alert alert-info alert-dismissable fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>FAQ!</strong> Why
+      <span style="text-decoration: underline;"> learn to speak</span> from Nalanda?
+      <strong>Ans.</strong> We focus on spoken English and use unique techniques that will save massive time and effort of the learners.
+    </div>
+
+    <div class="alert alert-info alert-dismissable fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>FAQ!</strong> Are Idioms/phrasal verbs same as expressions?
+      <strong>No.</strong> Idioms/Phrasal verbs are only a small subset of the expressions. Expressions are reusable patterns that
+      native speakers use often in their conversation.
+    </div>
+
+    <br>
+
+    <!-- Start of main content -->
+    <div class="row">
+      <div class="col">
+        <div style="border-style:solid; border-color:green; ">
+          <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Expressions For Students</h4>
+              <p class="card-text">For those who want to get into a job...</p>
+              <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
+              <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+            </div>
+          </div>
+          <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Expressions For Professionals</h4>
+              <p class="card-text">For Professionals who want to excel in their job...</p>
+              <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
+              <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+            </div>
+          </div>
+          <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Learning Videos</h4>
+              <p class="card-text">These videos cover the usage of expressions</p>
+              <a href="./videos.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
+              <a href="./videos.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+            </div>
+
+          </div>
         </div>
 
-      <div class="alert alert-info alert-dismissable fade show">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>FAQ!</strong> Are Idioms/phrasal verbs same as expressions? <strong>No.</strong> Idioms/Phrasal verbs are only a small subset of expressions. Expressions are reusable patterns
-        </div>
-  
-      <br>
-      <div style="border-style:solid; border-color:green; width:55%; float:left;">
-        <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Expressions For Students</h4>
-            <p class="card-text">For those who want to get into a job...</p>
-            <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
-            <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+      </div>
+      <div class="col">
+        <div style="border-style:solid; border-color:red;">
+          <div class="card" style="margin-top:10px; height:150px; width:400px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Top Expressions For Students</h4>
+              <p class="card-text">For students who want to get into a job...</p>
+              <a href="putTogetherDesc.html" class="btn btn-lg" role="button" aria-disabled="true">Put Together</a>
+              <a href="crumble.html" class="btn btn-lg" role="button" aria-disabled="true">Crumble</a>
+            </div>
           </div>
-        </div>
-        <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Expressions For Professionals</h4>
-            <p class="card-text">For Professionals who want to excel in their job...</p>
-            <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
-            <a href="./expressions.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+          <div class="card" style="margin-top:10px; height:150px; width:420px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Top Expressions For Professionsals</h4>
+              <p class="card-text">For Professionals who want to excel in their job...</p>
+              <a href="#" class="btn btn-lg" role="button" aria-disabled="true">Touch base (with)</a>
+              <a href="#" class="btn btn-lg" role="button" aria-disabled="true">enable</a>
+            </div>
           </div>
-        </div>
-        <div class="card" style="margin-top:10px; height:160px; width:475px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Learning Videos</h4>
-            <p class="card-text">These videos cover the usage of expressions</p>
-            <a href="./videos.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Basic</a>
-            <a href="./videos.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Advanced</a>
+          <div class="card" style="margin-top:10px; height:150px; width:420px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Top Videos For Student English</h4>
+              <iframe width="80" height="80" src="https://www.youtube.com/embed/HgwCeNVPlo0"> Video1 </iframe>
+              <iframe width="80" height="80" src="https://www.youtube.com/embed/HgwCeNVPlo0"> Video2 </iframe>
+            </div>
           </div>
-
+          <div class="card" style="margin-top:10px; height:150px; width:420px; border-color:#000000">
+            <div class="card-body">
+              <h4 class="card-title">Top Videos For Business English</h4>
+              <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video1 </iframe>
+              <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video2 </iframe>
+            </div>
+          </div>
         </div>
       </div>
-      <div style="border-style:solid; border-color:green; width:40%; float:right;">
-        <div class="card" style="margin-top:10px; height:150px; width:400px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Top Expressions For Students</h4>
-            <p class="card-text">For students who want to get into a job...</p>
-            <a href="putTogetherDesc.html" class="btn btn-lg" role="button" aria-disabled="true">Put Together</a>
-            <a href="#" class="btn btn-lg" role="button" aria-disabled="true">Get on</a>
-          </div>
-        </div>
-        <div class="card" style="margin-top:10px; height:150px; width:400px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Top Expressions For Business</h4>
-            <p class="card-text">For Professionals who want to excel in their job...</p>
-            <a href="#" class="btn btn-lg" role="button" aria-disabled="true">Touch base with</a>
-            <a href="#" class="btn btn-lg" role="button" aria-disabled="true">enable</a>
-          </div>
-        </div>
-        <div class="card" style="margin-top:10px; height:150px; width:400px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Top Videos For Student English</h4>
-            <iframe width="80" height="80" src="https://www.youtube.com/embed/HgwCeNVPlo0"> Video1 </iframe>
-            <iframe width="80" height="80" src="https://www.youtube.com/embed/HgwCeNVPlo0"> Video2 </iframe>
-          </div>
-        </div>
-        <div class="card" style="margin-top:10px; height:150px; width:400px; border-color:#000000">
-          <div class="card-body">
-            <h4 class="card-title">Top Videos For Business English</h4>
-            <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video1 </iframe>
-            <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video2 </iframe>
-          </div>
-        </div>
-
-      </div>
-
     </div>
+    <!-- End of main content -->
   </div>
-  <br/>
 
 </body>
 
