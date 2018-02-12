@@ -57,6 +57,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="Register.html">Register</a>
               </li>
+              <!-- Dropdown for Categories-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Categories
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="expressions.html">Job Interviews</a>
+                  <a class="dropdown-item" href="expressions.html">Certification Exams</a>
+                  <a class="dropdown-item" href="expressions.html">Country specific</a>
+                  <a class="dropdown-item" href="expressions.html">Business Meeting</a>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -68,20 +80,29 @@
     <div class="row">
       <div class="col">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Expression Search">
+          <form class="form-inline" action="expressions.html">
+            <input class="form-control" type="text" placeholder="Expression">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
       <div class="col">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Video Search">
+          <form class="form-inline" action="videos.html">
+            <input class="form-control" type="text" placeholder="Video">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
+      <div class="col">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+          <form class="form-inline" action="expressions.html">
+            <input class="form-control" type="text" placeholder="Category/Tag">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+
     </div>
     <!-- End of search bar -->
 
@@ -139,16 +160,16 @@
             <div class="card-body">
               <h4 class="card-title">Top Expressions For Students</h4>
               <p class="card-text">For students who want to get into a job...</p>
-              <a href="putTogetherDesc.html" class="btn btn-lg" role="button" aria-disabled="true">Put Together</a>
-              <a href="crumble.html" class="btn btn-lg" role="button" aria-disabled="true">Crumble</a>
+              <a href="putTogetherDesc.html" class="btn btn-lg" aria-disabled="true">Put together</a><sup>Student/Adv</sup>
+              <a href="crumble.html" class="btn btn-lg" aria-disabled="true">Crumble</a><sup>Student/Adv</sup>
             </div>
           </div>
           <div class="card" style="margin-top:10px; border-color:#000000">
             <div class="card-body">
               <h4 class="card-title">Top Expressions For Professionsals</h4>
               <p class="card-text">For Professionals who want to excel in their job...</p>
-              <a href="#" class="btn btn-lg" role="button" aria-disabled="true">Touch base (with)</a>
-              <a href="#" class="btn btn-lg" role="button" aria-disabled="true">enable</a>
+              <a href="putTogether_prof_adv.html" class="btn btn-lg" aria-disabled="true">Put together</a><sup>Prof/Adv</sup>
+              <a href="#" class="btn btn-lg" aria-disabled="true">Touch base (with)</a><sup>Prof/Basic</sup>
             </div>
           </div>
           <div class="card" style="margin-top:10px; border-color:#000000">
