@@ -50,9 +50,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="Login.html">Login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categories.html">Categories</a>
-              </li>
 
               <!-- Dropdown for Exercises-->
               <li class="nav-item dropdown">
@@ -109,6 +106,8 @@
     <!-- End of search bar -->
 
     <br>
+
+
     <div class="row">
       <ul class="nav nav-pills nav-fill nav-tabs">
         <li class="nav-item">
@@ -121,31 +120,100 @@
     </div>
     <br>
     <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#categories">Click here to see the proposed categories for videos</button>
+          <br>
+          <br>
+          <table class="table table-bordered collapse hide" id="categories">
+            <thead>
+              <tr>
+                <th>User type</th>
+                <th>Category</th>
+                <th>Subcategories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <td>Student</td>
+                <td>Job Interviews</td>
+                <td>Restaurant, Retail, Office, College Admission </td>
+              </tr>
+              <tr class="table-primary">
+                <td>Student</td>
+                <td>Debate</td>
+                <td>Debate/group discussion. Do we need subcategories for start, hold and conclude? </td>
+              </tr>
+              <tr class="table-primary">
+                <td>Student</td>
+                <td>English Exams</td>
+                <td>IELTS, TOEFL. The verbal communication skill needed is almost the same. Do we need to specify exams? </td>
+              </tr>
+              <tr class="table-primary">
+                <td>Student</td>
+                <td>Country Specific</td>
+                <td>US, UK, Ireland, AUS, Canada, India, ?</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Student</td>
+                <td>Socializing</td>
+                <td>Ask questions, acknowledgement, interactions</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Professional</td>
+                <td>Team meeting</td>
+                <td>Provide updates, Get updates</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Professional</td>
+                <td>Presentation/Seminar</td>
+                <td>Presentation, Speech, ??</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Professional</td>
+                <td>Job change Interviews</td>
+                <td>Specialized skill, Management</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Professional</td>
+                <td>Performance appraisal</td>
+                <td>supervisee, supervisor</td>
+              </tr>
+  
+            </tbody>
+          </table>
+  
+        </div>
+      </div>
+  
+    <div class="row">
       <div class="col">
         <label for="UserType">User Type : </label>
+        <br>
         <select name="User Type :">
           <option value="Student">Student</option>
           <option value="Professional">Professional</option>
         </select>
       </div>
       <div class="col">
-        <label for="VideoType">Video Type :</label>
-        <select name="Video Type : ">
-          <option value="Student">Learning Videos</option>
-          <option value="Professional">Inspirational Interviews</option>
-          <option value="Professional">Social/Meetup videos</option>
+        <label for="Category">Category :</label>
+        <br>
+        <select name="Category : ">
+          <option value="categories">Job interview</option>
+          <option value="categories">Socializing</option>
         </select>
       </div>
       <div class="col">
-        <label for="Category">Category :</label>
-        <select name="Category : ">
+        <label for="Category">SubCategory :</label>
+        <br>
+        <select name="SubCategory : ">
           <option value="All">All</option>
-          <option value="categories">Go to Categories page for details</option>
+          <option value="SubCategories">Restaurant</option>
+          <option value="SubCategories">Retail</option>
         </select>
       </div>
 
     </div>
-
+    <br>
     <div class="row">
       <table class="table table-bordered">
         <thead>
@@ -183,7 +251,7 @@
             <td>
               <div class="card" style="margin-top:10px; height:150px; width:300px; border-color:#000000">
                 <div class="card-body">
-                  <h5 class="card-title">Travel to India</h5>
+                  <h5 class="card-title">Retail job interview</h5>
                   <p class="card-text" style="float:right;">125K views,
                     <img class="img" src="5rating.png" height="50" width="70" alt="rating">
                   </p>

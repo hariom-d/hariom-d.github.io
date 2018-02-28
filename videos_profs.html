@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Categories</title>
+  <title>Prof Videos</title>
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
@@ -49,9 +50,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="Login.html">Login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categories.html">Categories</a>
-              </li>
+              
 
               <!-- Dropdown for Exercises-->
               <li class="nav-item dropdown">
@@ -87,29 +86,41 @@
 
     <!-- Start of search bar -->
     <div class="row">
-      <div class="col">
+      <div class="col ">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Expression Search">
+          <form class="form-inline" action="expressions.html">
+            <input class="form-control" type="text" placeholder="Expression">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
       <div class="col">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Video Search">
+          <form class="form-inline" action="videos.html">
+            <input class="form-control" type="text" placeholder="Video">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
+
     </div>
     <!-- End of search bar -->
-    <br>
 
+    <br>
+    <div class="row">
+      <ul class="nav nav-pills nav-fill nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="expressions.html">Expressions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Videos</a>
+        </li>
+      </ul>
+    </div>
+    <br>
     <div class="row">
       <div class="col">
-        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#categories">Click here to see proposed categories for videos</button>
+        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#categories">Click here to see the proposed categories for videos</button>
         <br>
         <br>
         <table class="table table-bordered collapse hide" id="categories">
@@ -171,89 +182,111 @@
         </table>
 
       </div>
-
     </div>
 
     <div class="row">
       <div class="col">
         <label for="UserType">User Type : </label>
+        <br>
         <select name="User Type :">
-          <option value="Student">Student</option>
           <option value="Professional">Professional</option>
+          <option value="Student">Student</option>
+
         </select>
       </div>
-      <div class="col">
+      <!-- <div class="col">
         <label for="VideoType">Video Type :</label>
+        <br>
         <select name="Video Type : ">
           <option value="Student">Learning Videos</option>
           <option value="Professional">Inspirational Interviews</option>
           <option value="Professional">Social/Meetup videos</option>
         </select>
-      </div>
+      </div> -->
       <div class="col">
         <label for="Category">Category :</label>
+        <br>
         <select name="Category : ">
+          <option value="categories">Team meeting</option>
+          <option value="categories">Seminar</option>
+          <option value="categories">Presentation</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="Category">SubCategory :</label>
+        <br>
+        <select name="SubCategory : ">
           <option value="All">All</option>
-          <option value="categories">Go to Categories page for details</option>
+          <option value="SubCategories">Provide updates</option>
+          <option value="SubCategories">Get updates</option>
         </select>
       </div>
 
     </div>
-
+    <br>
     <div class="row">
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Videos
-              <span style="color:red;">(Category name here)</span>
-            </th>
-            <th>Expressions Covered in the video</th>
+            <th>Videos</th>
+            <th>Expressions Covered</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <div class="card" style="margin-top:10px; height:150px; width:300px; border-color:#000000">
+              <div class="card" style="margin-top:10px; height:150px; width:450px; border-color:#000000">
                 <div class="card-body">
-                  <h5 class="card-title">Coffee shop job interview</h5>
-                  <p class="card-text" style="float:right;">125K views,
+                  <h5 class="card-title">How to provide updates</h5>
+                  <span class="card-text" style="float:right;">
+                    <span>Category: Team meeting/Provide updates,</span>
+                    <br>
+                    <span> 125K views,</span>
+
                     <img class="img" src="5rating.png" height="50" width="70" alt="rating">
-                  </p>
+                  </span>
                   <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video1 </iframe>
                 </div>
               </div>
             </td>
             <td>
-              <a href="putTogetherDesc.html">
+              <a href="putTogether_prof_adv.html">
                 <em>Put Together</em>
               </a>
-              <sup>Student/Adv</sup>
+              <sup>Prof/Adv</sup>
               <br>
-              <a href="crumble.html">
-                <em>Crumble</em>
+              <a href="#">
+                <em>set agenda</em>
               </a>
-              <sup>Student/Adv</sup>
+              <sup>Prof/Basic</sup>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="card" style="margin-top:10px; height:150px; width:300px; border-color:#000000">
+              <div class="card" style="margin-top:10px; height:150px; width:450px; border-color:#000000">
                 <div class="card-body">
-                  <h5 class="card-title">Travel to India</h5>
-                  <p class="card-text" style="float:right;">125K views,
+                  <h5 class="card-title">How to get updates</h5>
+                  <span class="card-text" style="float:right;">
+                    <span>Category: Team meeting/get updates,</span>
+                    <br>
+                    <span> 125K views,</span>
                     <img class="img" src="5rating.png" height="50" width="70" alt="rating">
-                  </p>
+                  </span>
                   <iframe width="80" height="80" src="https://www.youtube.com/embed/2xY5MOeTuYw"> Video1 </iframe>
                 </div>
               </div>
             </td>
             <td>
               <a href="#">
-                <em>Hidden potential</em>
+                <em>hidden potential</em>
               </a>
               <br>
               <a href="#">
-                <em>Massive</em>
+                <em>massive</em>
+              </a>
+              <br>
+              <a href="#">
+                <em>mammoth task</em>
               </a>
             </td>
           </tr>
@@ -267,7 +300,9 @@
 
     </div>
 
+
   </div>
+
 </body>
 
 </html>
