@@ -2,21 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Login page</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 3</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 </head>
 
@@ -49,7 +39,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="Login.html">Login</a>
               </li>
-              
 
               <!-- Dropdown for Exercises-->
               <li class="nav-item dropdown">
@@ -78,7 +67,6 @@
               </li>
 
             </ul>
-
           </div>
         </nav>
       </div>
@@ -87,61 +75,74 @@
 
     <!-- Start of search bar -->
     <div class="row">
-      <div class="col">
+      <div class="col ">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Expression Search">
+          <form class="form-inline" action="expressions.html">
+            <input class="form-control" type="text" placeholder="Expression">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
       <div class="col">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Video Search">
+          <form class="form-inline" action="videos.html">
+            <input class="form-control" type="text" placeholder="Video">
             <button class="btn btn-success" type="submit">Search</button>
           </form>
         </nav>
       </div>
+
     </div>
     <!-- End of search bar -->
     <br>
-    <div>
 
-      <button>Login with facebook account</button>
-      <button>Login with twitter account</button>
-      <button>Login with google account</button>
-      <br>
-      <br>
-      <p>
-        <strong> OR</strong>
-      </p>
-      <br>
-      <p>
-        Login to Nalanda below with your credentials. If you have not registered then click
-        <a href="Register.html">Register</a> to register
-      </p>
+    <div class="row text-center">
+      <div class="col">
+        <h3>Recall span and the frequency </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        The purpose of this exercise is to help you
+        <strong>recall</strong> depending on when you learned the expressions.
+        <br> It is generally accepted that you should recall the material first time within 3 days and the second time after
+        a span of a week.
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
 
+        <div data-role="page">
+          <div data-role="header">
+            <h1>Recall expressions based on date range</h1>
+          </div>
 
+          <div data-role="main" class="ui-content">
+            <form method="post" action="#">
+              <div data-role="rangeslider">
+                <label for="price-min">Days:</label>
+                <input type="range" name="price-min" id="price-min" value="1" min="0" max="15">
+                <label for="price-max">Price:</label>
+                <input type="range" name="price-max" id="price-max" value="10" min="0" max="15">
+              </div>
+              <input type="submit" data-inline="true" value="Submit">
+              <p>The purpose of this exercise is to help you
+                  <strong>recall</strong> expressions depending on when you learned last time .
+                  <br> It is generally accepted that you should recall the material first time within 3 days and the second time after
+                  a span of a week.</p>
+                  <p>On this page we need to show the expressions that user bookmarked and fall in the given date range.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
 
     </div>
-    <form action="/action_page.php">
-      <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-      </div>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox"> Remember me
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
   </div>
+
+
 </body>
 
 </html>
