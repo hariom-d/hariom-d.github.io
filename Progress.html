@@ -5,10 +5,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Registration page</title>
+  <title>Progress</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="custom.css">
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,6 +20,8 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 </head>
 
@@ -51,7 +55,6 @@
                 <a class="nav-link" href="Login.html">Login</a>
               </li>
 
-
               <!-- Dropdown for Exercises-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navExercises" data-toggle="dropdown">
@@ -80,7 +83,6 @@
               </li>
 
             </ul>
-
           </div>
         </nav>
       </div>
@@ -89,69 +91,117 @@
 
     <!-- Start of search bar -->
     <div class="row">
-      <div class="col">
+      <div class="col ">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Expression Search">
-            <button class="btn btn-success" type="submit">Search</button>
+          <form class="form-inline" action="expressions.html">
+            <input class="form-control" type="text" placeholder="ring a bell">
+            <button class="btn btn-success" type="submit">Search Expression</button>
           </form>
         </nav>
       </div>
       <div class="col">
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="#">
-            <input class="form-control" type="text" placeholder="Video Search">
-            <button class="btn btn-success" type="submit">Search</button>
+          <form class="form-inline" action="videos.html">
+            <input class="form-control" type="text" placeholder="coffee shop">
+            <button class="btn btn-success" type="submit">Search videos</button>
           </form>
         </nav>
       </div>
-
 
     </div>
     <!-- End of search bar -->
     <br>
-    <div>
 
+    <div class="row">
+      <div class="col">
+
+        <!-- Nav pills -->
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home">Student/Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu1">Student/Adv</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu2">Prof/Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu3">Prof/Adv</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active container" id="home">
+
+              <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+              <br>
+              <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+
+          </div>
+          <div class="tab-pane container" id="menu1">Chart to be shown similar to Student/Basic</div>
+          <div class="tab-pane container" id="menu2">Chart to be shown similar to Student/Basic</div>
+          <div class="tab-pane container" id="menu3">Chart to be shown similar to Student/Basic</div>
+        </div>
+
+      </div>
     </div>
-    <form action="#">
-      <div class="form-group">
-        <label for="UserName">User name:</label>
-        <input type="text" class="form-control" id="userName">
-      </div>
-      <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-      </div>
-      <br>
-      <label for="UserType">User Type: </label>
-      <select name="UserType">
-        <option value="Student">Student</option>
-        <option value="Professional">Professional</option>
-      </select>
-      <br>
-      <br>
-      <label for="Level">Level: </label>
-      <select name="Level">
-        <option value="Basic">Basic</option>
-        <option value="Advanced">Advanced</option>
-      </select>
-      <br>
-      <label for="popularity">Popularity of Expressions: </label>
-      <select name="popularity">
-        <option value="High">High</option>
-        <option value="Medium">Medium</option>
-      </select>
 
-      <p style="color:red;">**You can update your preferences anytime in future. We will tailor the content for you based on your preferences.</p>
-      <p>Notes to developers: We will use the preferences set here to show the tailored content for listing of expressions and videos, Fill in the blanks exercises, ? </p>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
   </div>
+
+  <script type="text/javascript">
+    window.onload = function () {
+      var chart1 = new CanvasJS.Chart("chartContainer1",
+        {
+          title: {
+            text: "Progress on High popularity expressions"
+          },
+          legend: {
+            maxWidth: 350,
+            itemWidth: 120
+          },
+          data: [
+            {
+              type: "pie",
+              showInLegend: true,
+              legendText: "{indexLabel}",
+              dataPoints: [
+                { y: 35, indexLabel: "Remaining" },
+                { y: 20, indexLabel: "Blacklisted" },
+                { y: 50, indexLabel: "Bookmarked" }]
+            }
+          ]
+        });
+      chart1.render();
+
+      var chart2 = new CanvasJS.Chart("chartContainer2",
+        {
+          title: {
+            text: "Progress on Medium popularity expressions"
+          },
+          legend: {
+            maxWidth: 350,
+            itemWidth: 120
+          },
+          data: [
+            {
+              type: "pie",
+              showInLegend: true,
+              legendText: "{indexLabel}",
+              dataPoints: [
+                { y: 4181563, indexLabel: "Remaining" },
+                { y: 2175498, indexLabel: "Blacklisted" },
+                { y: 3125844, indexLabel: "Bookmarked" }]
+            }
+          ]
+        });
+      chart2.render();
+    }
+  </script>
+
+
+
 </body>
 
 </html>
