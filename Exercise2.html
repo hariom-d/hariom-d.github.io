@@ -8,7 +8,7 @@
   <title>Exercise2</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/multirange.css">
+  <!-- <link rel="stylesheet" href="css/multirange.css"> -->
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +18,7 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="js/multirange.js"></script>
+  <!-- <script src="js/multirange.js"></script> -->
 
 </head>
 
@@ -109,11 +109,104 @@
     <!-- End of search bar -->
     <br>
 
+    
+    <!-- <div class="row">
+      <div class="col">
+        <h5> Above exercise should be created from the bookmarked collection of expressions based on the below criteria
+          <br> </h5>
+        <br> Days/Dates:
+        <input type="range" multiple value="20, 60" />
+        <br>
+      </div>
+    </div> -->
+    <div class="rol">
+      <div class="col">
+        <h4> Generate the Fill in the blank exercise from bookmarked expressions based on the filter</h4>
+      </div>
+    </div>
 
+    <br> <br>
+    <div class="row">
+      <div class="dropdown col">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          Level
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Basic</a>
+          <a class="dropdown-item" href="#">Advanced</a>
+        </div>
+        <label for="Level">Basic</label>
+      </div>
+
+
+      <div class="dropdown col">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          Popularity
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">High</a>
+          <a class="dropdown-item" href="#">Medium</a>
+        </div>
+        <label for="Popularity">High</label>
+      </div>
+      <div class="dropdown col">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          User Type
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Student</a>
+          <a class="dropdown-item" href="#">Professional</a>
+        </div>
+        <label for="UserType">Student</label>
+      </div>
+      <div class="dropdown col">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          Display expressions
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">5</a>
+          <a class="dropdown-item" href="#">10</a>
+        </div>
+        <label for="#DisplayExpressions">5</label>
+      </div>
+      <div class="dropdown col">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          Based on the bookmarked time
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Mixed</a>
+          <a class="dropdown-item" href="#">Oldest</a>
+          <a class="dropdown-item" href="#">Latest</a>
+        </div>
+        <label for="#DisplayExpressions">Mixed</label>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+      <div class="col">
+         <button class="btn-primary" type="submit">Generate Exercise</button>
+      </div>
+
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        Initial/default values in the dropdown should be displayed as per the preferences set in the profile of the registered user.
+      </div>
+
+    </div>
 
     <div class="row">
       <div class="col">
-        <h4>Fill in the blanks with appropriate words/expressions:</h4>
+        We need to dynamically generate such exercises from the pool of expressions bookmarked by the user. We will encourage users
+        to bookmark the expressions to get better experience from the revision process. This way we can tailor the exercise
+        based on user profile and oldest/latest/mixed viewed bookmarked expressions.
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <h4>Fill in the blanks with the appropriate words/expressions:</h4>
         put together, right, substance, limit
 
         <br>
@@ -127,81 +220,15 @@
             Is there any ..... to this allegation?
           </li>
           <li>
-            We have to .... the wrongs done by previous government.
+            We have to .... the wrongs done by the previous government.
           </li>
           <li>
-            We need to .... the people in the meeting to 5.
+            We need to .... the number of people in the meeting to 5.
           </li>
         </ol>
 
         <button type="submit">Submit</button>
       </div>
-    </div>
-
-    <br>
-    <div class="row">
-      <div class="col">
-        <h5> Above exercise should be created from the bookmarked collection of expressions based on the below criteria
-          <br> </h5>
-        <br> Days/Dates:
-        <input type="range" multiple value="20, 60" />
-        <br>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="dropdown col-md">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-          Level
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Basic</a>
-          <a class="dropdown-item" href="#">Advanced</a>
-        </div>
-        <label for="Level">Basic</label>
-      </div>
-
-
-      <div class="dropdown col-md">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-          Popularity
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">High</a>
-          <a class="dropdown-item" href="#">Medium</a>
-        </div>
-        <label for="Popularity">High</label>
-      </div>
-      <div class="dropdown col-md">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-          User Type
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Student</a>
-          <a class="dropdown-item" href="#">Professional</a>
-        </div>
-        <label for="UserType">Student</label>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        Initial/default values in the dropdown should be displayed as per the preferences set in the profile by the registered user.
-      </div>
-
-    </div>
-
-
-    <br>
-
-    <div class="row">
-      <div class="col">
-        We need to dynamically generate such exercises from the pool of expressions bookmarked by users. We will encourage users
-        to bookmark the expressions to get better experience in the revision process. This way we can tailor the exercise
-        based on user profile and oldest/latest/mixed viewed bookmarked expressions.
-
-      </div>
-
     </div>
 
 
