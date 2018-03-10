@@ -115,7 +115,8 @@
     For example, if an expression is generally not used in writing then we can put tag as 'Not suitable for writing'. If
     the expression is country specific then we can tag it as 'US, UK etc..'. We need to allow search by tags also. Can this
     category and tags concept be improved?
-    <br> <br>
+    <br>
+    <br>
     <strong> Q. How do we tell users about the categories/subcategories from home page?</strong>
     <br> Ans: ??
     <br>
@@ -125,12 +126,13 @@
     then they can prevent the expression from displaying again.
     <br> If the user likes the expression then they can bookmark the expression. We will help the users to memorize and recall
     with effective techniques. See the below diagram to understand the concept.
-    <br> As per the diagram below, expressions 3,5,6 will be removed from the view for the user after they are moved to other
+    <br> As per the diagram below, expressions 3,5,6,7 will be removed from the view for the user after they are moved to other
     buckets.
     <img src="img/memorizationBuckets.jpg" alt="memorize">
     <br>
     <strong> Q. How the various entities in the website are related?</strong>
-    <br> Ans: The below diagram provides high level Entity Relation Diagram(ERD). We need to finalize what attributes these entity. This diagram is NOT for database design. More later...
+    <br> Ans: The below diagram provides high level Entity Relation Diagram(ERD). We need to finalize what attributes these entity.
+    This diagram is NOT for database design. More later...
     <br>
     <img src="img/ERD.jpg" alt="ERD">
     <br>
@@ -158,8 +160,9 @@
 
     <br>
     <strong>Q. What micro-services will be developed?</strong>
-    <br> Ans: The list below is a quick thinking about the services. We can do further merging or break down when we discuss
-    in detail.
+    <br> Ans: The list below is a quick thinking about the services. Some APIs may be exposed to third party for business process
+    integration, rest will be for internal to our system. We can do further merging or break down when we discuss in detail.
+    <br> <br>
     <ol>
       <li>getExerciseForExpression()</li>
       <li>getBookmarkedExpressions()</li>
@@ -181,6 +184,8 @@
       <li>getNumberOfLikesForVideo()</li>
       <li>getNumberOfDislikesForExpression()</li>
       <li>getNumberOfDislikesForVideo()</li>
+      <li>addUser()</li>
+      <li>removeUser()</li>
 
     </ol>
 
@@ -206,7 +211,7 @@
       <li>Publish content</li>
     </ol>
 
-    Admin user duties:
+    Admin user duties:(Admin user should be created directly in database, not through UI.)
     <ol>
       <li>Add/Remove support and moderator users</li>
     </ol>
