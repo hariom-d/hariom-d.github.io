@@ -67,7 +67,7 @@
                   <a class="dropdown-item" href="Progress.html">View Progress</a>
                   <a class="dropdown-item" href="SupportUser.html">Support user</a>
                   <a class="dropdown-item" href="Publisher.html">Publisher user</a>
-                  <a class="dropdown-item" href="TBD.html">To be discussed</a>                  
+                  <a class="dropdown-item" href="TBD.html">To be discussed</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -129,7 +129,7 @@
             <a class="nav-link" data-toggle="pill" href="#story">Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#more">What Else?</a>
+            <a class="nav-link" data-toggle="pill" href="#comicBook">Comic Book</a>
           </li>
         </ul>
 
@@ -276,7 +276,28 @@
             </form>
 
           </div>
-          <div class="tab-pane container" id="more">What else?</div>
+          <div class="tab-pane container" id="comicBook">
+            <form action="#">
+              <div class="form-group">
+                <label for="comicBookTitle">ComicBook Title:</label>
+                <input type="text" class="form-control" id="comicBookTitle">
+              </div>
+              <div class="form-group">
+                <label for="expressionsCoveredInComic">Expressions Covered:</label>
+                <input type="text" class="form-control" id="expressionsCoveredInComic" placeholder="Add expressions covered in the comic">
+              </div>
+              <div class="form-group">
+                <label for="imagesForComic">Images for comic:</label>
+                <input type="file" class="form-control" id="imagesForComic">
+              </div>
+              <p style="color:red;">What happens in the expressions details page when the comic covering the expression is deleted??</p>
+              <p style="color:red;">What happens in the comic page when an expression covered in the comic is deleted??</p>
+              <p style="color:red;">Can we find all the locations where the deleted expression has been used?</p>
+              <button type="submit" class="btn btn-primary">Add Comic</button>
+              <button type="submit" class="btn btn-primary">Update Comic</button>
+              <button type="submit" class="btn btn-primary">Delete Comic</button>
+            </form>
+          </div>
         </div>
 
       </div>
