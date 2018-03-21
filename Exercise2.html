@@ -131,7 +131,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <h4> Generate a Fill in the blank exercise from bookmarked expressions based on a filter</h4>
+        <h4> Generate a Fill in the blank exercise from bookmarked expressions based on a filter(max 5 tests)</h4>
       </div>
     </div>
 
@@ -170,7 +170,7 @@
         </div>
         <label for="UserType">Student</label>
       </div>
-      <div class="dropdown col">
+      <!-- <div class="dropdown col">
         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
           Display expressions
         </button>
@@ -179,7 +179,7 @@
           <a class="dropdown-item" href="#">10</a>
         </div>
         <label for="#DisplayExpressions">5</label>
-      </div>
+      </div> -->
       <div class="dropdown col">
         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
           Based on the bookmarked time
@@ -210,9 +210,11 @@
 
     <div class="row">
       <div class="col">
-        We need to dynamically generate such exercises from the pool of expressions bookmarked by the user. We will encourage users
-        to bookmark the expressions to get better experience from the revision process. This way we can tailor the exercise
-        based on user profile and oldest/latest/mixed viewed bookmarked expressions.
+        We need to dynamically generate such exercises from the pool of expressions bookmarked by the user.
+        <br> We will encourage users to bookmark the expressions to get better experience from the revision process. This way
+        we can tailor the exercise based on the user profile and the oldest/latest/mixed viewed bookmarked expressions.
+        <br>
+        <strong> Notes to developers:</strong> We should put logic to prevent the tests coming from synonyms(similar expressions).
       </div>
     </div>
     <br>
