@@ -170,28 +170,26 @@
     integration, rest will be for internal to our system. We can do further merging or break down when we discuss in detail.
     <br> <br>
     <ol>
-      <li>getExerciseForExpression()</li>
-      <li>getBookmarkedExpressions()</li>
-      <li>getBlacklistedExpressions()</li>
-      <li>getExpressionsToDisplay()</li>
-      <li>getExpressionsBasedOnFilter()</li>
-      <li>getVideosBasedOnFilter()</li>
-      <li>login()</li>
-      <li>register()</li>
-      <li>getTestBasedOnTestLevel()</li>
-      <li>getMovieClipsForExpressions()</li>
-      <li>searchExpression()</li>
-      <li>searchVideos()</li>
-      <li>getVideosOfACategory() or subcategory</li>
-      <li>getTranscriptOfVideo()</li>
-      <li>getExpressionsCoveredInVideo()</li>
-      <li>getVideosCoveringAnExpression()</li>
-      <li>getNumberOfLikesForExpression()</li>
-      <li>getNumberOfLikesForVideo()</li>
-      <li>getNumberOfDislikesForExpression()</li>
-      <li>getNumberOfDislikesForVideo()</li>
-      <li>addUser()</li>
-      <li>removeUser()</li>
+      <li>getExerciseForExpression(expressionStr, Level)</li>
+      <li>getBookmarkedExpressions(userName)</li>
+      <li>getBlacklistedExpressions(userName)</li>
+      <li>getExpressionsToDisplay(filter based on default or user preference)</li>
+      <li>getVideosToDisplay(filter based on default or user preference)</li>
+      <li>login(userName, role)</li>
+      <li>register(userName, emailID, other preferences)</li>
+      <li>getMovieClipsForExpressions(expressionStr, Level)</li>
+      <li>searchExpression(expression search string)</li>
+      <li>searchVideos(video search string)</li>
+      <li>getVideosOfACategory(categoryName, subCategoryName)</li>
+      <li>getTranscriptOfVideo(videoTitle, language)</li>
+      <li>getExpressionsCoveredInVideo(videoTitle)</li>
+      <li>getVideosCoveringAnExpression(expressionStr, Level)</li>
+      <li>getNumberOfLikesForExpression(expressionStr, Level)</li>
+      <li>getNumberOfLikesForVideo(videoTitle)</li>
+      <li>getNumberOfDislikesForExpression(expressionStr, Level)</li>
+      <li>getNumberOfDislikesForVideo(videoTitle)</li>
+      <li>addUser(userName, role)</li>
+      <li>removeUser(userName)</li>
 
     </ol>
 
