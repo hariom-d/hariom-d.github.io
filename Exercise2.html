@@ -131,7 +131,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <h4> Generate a Fill in the blank exercise from bookmarked expressions based on a filter(max 5 tests)</h4>
+        <h4> Generate a Fill in the blank exercise/test from the bookmarked expressions based on filters(max 5 questions in one test)</h4>
       </div>
     </div>
 
@@ -195,7 +195,7 @@
     <br>
     <div class="row text-center">
       <div class="col">
-        <button class="btn-primary" type="submit">Generate Exercise</button>
+        <button class="btn-primary" type="submit">Generate Exercise/Test</button>
       </div>
 
     </div>
@@ -221,31 +221,48 @@
     <div class="row">
       <div class="col">
         <h4>Fill in the blanks with the appropriate words/expressions:</h4>
-        put together<sup>Student/Basic</sup>, right<sup>Student/Basic</sup>, substance<sup>Student/Adv</sup>, limit<sup>Student/Adv</sup>
-
-        <br>
         <br>
 
         <ol>
           <li>
-            Could you please ..... the high level design .......
+            Could you please <select id="Q1Blank1">
+              <option></option>
+              <option>put</option>
+              <option>liaise</option>
+            </select> 
+            
+            the high level design <select id="Q1Blank2">
+              <option></option>
+              <option>together</option>
+              <option>with</option>
+            </select> 
           </li>
           <li>
-            Is there any ..... to this allegation?
+            Is there any <select id="Q2Blank1">
+              <option></option>
+              <option>substance</option>
+              <option>blame</option>
+            </select>  to this allegation?
           </li>
           <li>
-            We have to .... the wrongs done by the previous government.
+            We have to <select id="Q3Blank1">
+              <option></option>
+              <option>right</option>
+              <option>pull</option>
+            </select> the wrongs done by the previous government.
           </li>
           <li>
-            We need to .... the number of people in the meeting to 5.
+            We need to <select id="Q4Blank1">
+              <option></option>
+              <option>limit</option>
+              <option>stop</option>
+            </select> the number of people in the meeting to 5.
           </li>
         </ol>
 
         <button type="submit">Submit</button>
       </div>
     </div>
-
-
   </div>
 
 </body>
