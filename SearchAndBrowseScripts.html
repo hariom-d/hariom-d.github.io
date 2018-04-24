@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Put together</title>
+  <title>Search and Browse scripts</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
@@ -99,123 +99,85 @@
               </li>
 
             </ul>
-
           </div>
         </nav>
       </div>
     </div>
     <!-- End of Header -->
-
+    <br>
     <!-- Start of search bar -->
     <div class="row">
       <div class="col ">
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="search-expressions.html">
+        <nav class="navbar navbar-expand bg-primary navbar-dark">
+          <form class="form-inline" action="SearchAndBrowseScripts.html">
+            Expression: 
             <input class="form-control" type="text" placeholder="put together">
+            <div class="dropdown col">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  User Type
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Student</a>
+                  <a class="dropdown-item" href="#">Professional</a>
+                </div>
+                <label for="UserType">Student</label>
+              </div>
             <button class="btn btn-success" type="submit">Search Expression</button>
-          </form>
-        </nav>
-      </div>
-      <div class="col">
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-          <form class="form-inline" action="search-videos.html">
-            <input class="form-control" type="text" placeholder="coffee shop">
-            <button class="btn btn-success" type="submit">Search videos</button>
           </form>
         </nav>
       </div>
     </div>
     <!-- End of search bar -->
-
+    <br>
 
     <div class="row">
-      <div class="col-3">
-        <div>
-          Rating by Users:
-          <img class="img" src="2andHalfStar.png" height="50" width="70" alt="rating">
-          <br> Tags: --, --
-        </div>
-        <div>
-          <button>Click to bookmark this expression</button>
-        </div>
-        <br>
-        <button>
-          I already use this in conversation. Don't show again
-        </button>
-        <br>
-        <br>
-        <div style="border: solid;color:red;">
-          <a href="dialogues.html">view usage in movie dialogues</a>
-        </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>The list below displays the scripts where the searched expression has been used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="Scripts.html">Here the title of script1 is displayed. Clicking on this link will take you to the location in the script where expression
+                has been used. <br> Do we really need to take the user to the specific location?</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Here goes the title of script 2
+            </td>
+          </tr>
+          <tr>
+            <td>
+                Here goes the title of script 3
+            </td>
+          </tr>
+          <tr>
+            <td>
+                Here goes the title of script 4
+            </td>
+          </tr>
+          <tr>
+            <td>
+                Here goes the title of script 5
+            </td>
+          </tr>
 
-      </div>
-      <div class="col">
-        <b class="bg-danger">Put together</b>
-        <sup>Prof/Adv</sup>
-        <img src="volume.jpg" height="40" width="40" alt="volume">
-        <span class="text-primary">combined</span>
-        <br> Popularity : Medium
-        <br>
-        <span>
-          <strong>Context:</strong> Generally spoken at the end of the line.
-        </span>
-        <br>
-        <br>
-        <strong>Examples...</strong>
-        <br>
-        <ol>
-          <li>
-            Population of India is bigger than that of US, EU and Mexico
-            <i>put together</i>.
-          </li>
-          <li>
-            She earns more than all the rest of us
-            <i>put together</i>.
-          </li>
-        </ol>
+          <tr>
+            <td>
+                Here goes the title of script 6
+            </td>
+          </tr>
 
-        <strong>Similar expressions:</strong>
-        <em>Bring together</em>
-        <sup>Student/Basic</sup>
-        <br>
-        <strong>Opposite expressions:</strong>
-        <em>Take apart</em>
-        <sup>Student/Basic</sup>
-        <br>
-        <strong>Our recommended expressions:</strong>
-        <a href="putTogetherDesc.html">Put together</a>
-        <sup>Student/Basic</sup>
-        <br>
-        <br>
-        <strong>Covered in videos</strong>
-        <div>
-          <iframe width="80" height="80" src="https://www.youtube.com/embed/2xY5MOeTuYw"> Video1 </iframe>
-          <iframe width="80" height="80" src="https://www.youtube.com/embed/2xY5MOeTuYw"> Video1 </iframe>
-        </div>
-        <strong>Our recommended videos:</strong>
-        <div>
-          <iframe width="80" height="80" src="https://www.youtube.com/embed/tgbNymZ7vqY"> Video1 </iframe>
-          <iframe width="80" height="80" src="https://www.youtube.com/embed/2xY5MOeTuYw"> Video1 </iframe>
-        </div>
-        <a href="SearchAndBrowseScripts.html">
-          <strong>Click here to see where the expression is used in the scripts</strong>
-        </a>
-        <br>
-        <span style="border: solid; color:red;">
-          <strong>Covered in the Comic:</strong>
-        </span>
-        <a href="comics.html">Comic book</a>
-        <br>
-        <strong>Please provide comments below to discuss with community</strong>
-        <br>
-        <textarea rows="4" cols="50">
-            One more good example could be ...
-        </textarea>
-        <br>
-        <button> Submit</button>
+        </tbody>
+      </table>
 
-      </div>
+      <h5 style="color:red">Paginate the list if the number of scripts are more than the number allowed on the page</h5>
     </div>
+
+
   </div>
 
 </body>
