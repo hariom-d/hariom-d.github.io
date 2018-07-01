@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Facebook page of Nalanda</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h4>Column 1</h4>
+
+                <img src="Slide-02.png" alt="" />
+            </div>
+            <div class="col">
+                <h4>Column 2</h4>
+
+                <img src="Slide-01.png" alt="" height="402" width="447" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area alt="" title="" href="http://www.bbc.com" shape="rect" coords="234,114,332,121" />
+
+                </map>
+            </div>
+            <div class="col">
+                <h4>Column 3</h4>
+
+                <img src="Slide-03.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+
+</html>
