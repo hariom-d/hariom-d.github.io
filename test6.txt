@@ -1,1 +1,2 @@
 test6 content
+Added in remote master
