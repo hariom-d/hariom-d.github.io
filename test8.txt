@@ -2,3 +2,4 @@ content test8-- added in master- conflict resolved.
 added in remote master to verify sync
 added more in remote master to verify sync
 one more try
+remote master change1
