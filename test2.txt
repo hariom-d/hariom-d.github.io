@@ -1,2 +1,3 @@
 this is for test 2
 added in master to test this line does not cause conflict.
+test master pull rebase option
